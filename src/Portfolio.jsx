@@ -46,7 +46,8 @@ const PROJECTS = [
     category: "Machine Learning",
     desc:
       "Identified valuable reviews to optimize product page ordering and detect trustworthy feedback using logistic regression and A/B testing.",
-    href: "https://github.com/CAWang16/Amazon-Review-Value-Ranking-and-Trust-Analysis",
+    href:
+      "https://github.com/CAWang16/Amazon-Review-Value-Ranking-and-Trust-Analysis",
     cta: "View on GitHub →",
     areas: ["analysis", "modeling"],
     skills: ["Python", "Scikit-learn", "A/B Testing", "Logistic Regression"],
@@ -85,8 +86,12 @@ const PROJECTS = [
 ];
 
 export default function Portfolio() {
-  const [active, setActive] = useState("Modeling");
-  const current = AREAS[active];
+  // 🔹 default = modeling
+  const [active, setActive] = useState("modeling");
+
+  // 🔹 safe fallback so `current` is never undefined
+  const current = AREAS[active] || AREAS.modeling;
+
   const filteredProjects = PROJECTS.filter((proj) =>
     proj.areas.includes(active)
   );
@@ -100,7 +105,7 @@ export default function Portfolio() {
             ← Home
           </a>
           <h1 className="text-2xl md:text-3xl font-semibold tracking-tight text-center flex-1">
-            Experience & Portfolio
+            Experience &amp; Portfolio
           </h1>
           <span className="w-20" />
         </div>
@@ -151,7 +156,8 @@ export default function Portfolio() {
         <section className="space-y-4">
           <h2 className="text-xl md:text-2xl font-semibold">Selected Projects</h2>
           <p className="text-sm md:text-base text-neutral-300">
-            Projects related to <span className="font-semibold">{current.label}</span>.
+            Projects related to{" "}
+            <span className="font-semibold">{current.label}</span>.
           </p>
 
           {filteredProjects.length === 0 ? (
@@ -176,7 +182,6 @@ export default function Portfolio() {
                   </h3>
                   <p className="text-sm text-neutral-300 mb-3">{proj.desc}</p>
 
-                  {/* Skills */}
                   <div className="flex flex-wrap gap-2 mt-2">
                     {proj.skills.map((s, i) => (
                       <span
