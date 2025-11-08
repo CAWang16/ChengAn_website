@@ -85,7 +85,7 @@ const PROJECTS = [
 ];
 
 export default function Portfolio() {
-  const [active, setActive] = useState("engineering");
+  const [active, setActive] = useState("Modeling");
   const current = AREAS[active];
   const filteredProjects = PROJECTS.filter((proj) =>
     proj.areas.includes(active)
