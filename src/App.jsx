@@ -28,7 +28,7 @@ export default function LinkHub() {
     },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/anderswang55414/",
+      href: "https://www.linkedin.com/in/andersdatascience/",
       icon: <FaLinkedin />,
       external: true,
     },
@@ -37,12 +37,6 @@ export default function LinkHub() {
       href: "/portfolio",
       icon: <span className="text-lg">💼</span>,
       external: false,
-    },
-    {
-      label: "Resume",
-      href: "/resume.pdf",
-      icon: <FaFileAlt />,
-      external: true,
     },
     
   ];
