@@ -16,15 +16,15 @@ const SLIDES = [
   },
   {
     src: "/Distribution_successrate.png",
-    title: "Delivery Success Rate by Segment",
+    title: "User Onboarding & Verification Funnel",
     description:
-      "Compares delivery success rates across customer segments and regions to identify operational bottlenecks.",
+      "Visualizes the end-to-end verification journey, tracking Know Your Customer (KYC) conversion rates from Level 1 to Level 2. Features dynamic filtering by citizenship and residence to identify regional friction points in the onboarding process.",
   },
   {
     src: "/webpage_filter_aggregation.png",
-    title: "Interactive KPI Overview",
+    title: "Integrated KYC Risk Intelligence Hub",
     description:
-      "Provides a filterable view of key KPIs so stakeholders can slice performance by country, product, or time period.",
+      "A centralized risk monitoring platform offering 9 granular filters for multidimensional user analysis. leveraged dashboard embedding to consolidate related compliance metrics into a single view, significantly reducing investigator navigation time.",
   },
 ];
 
