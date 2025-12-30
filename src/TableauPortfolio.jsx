@@ -4,15 +4,15 @@ import React, { useState } from "react";
 const SLIDES = [
   {
     src: "/5data_growthrate.png",
-    title: "Monthly Growth & Volume",
+    title: "Multi-API Infrastructure & Cost Analytics",
     description:
-      "Tracks monthly revenue, order volume, and growth rate to monitor overall business performance over time.",
+      "Developed an automated Python ETL pipeline on AWS Glue to consolidate usage data from 5 distinct APIs into AWS Redshift. Engineered a dynamic dashboard to monitor real-time integration costs, enabling data-driven decisions on cloud infrastructure spend.",
   },
   {
     src: "/Cost_distribution_error.png",
-    title: "Cost Distribution & Error Rates",
+    title: "Operational Health: Global Delivery & Error Analytics",
     description:
-      "Breaks down cost by country and highlights abnormal cost spikes and delivery errors for investigation.",
+      "Developed a diagnostic dashboard to monitor third-party service delivery performance and cost distribution across global markets. Engineered automated tracking for error rate spikes, enabling rapid root-cause investigation and optimization of logistics partner efficiency.",
   },
   {
     src: "/Distribution_successrate.png",
